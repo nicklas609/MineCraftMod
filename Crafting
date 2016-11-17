@@ -1,0 +1,20 @@
+package dk.codingpirates.minecraft.mods.block;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import dk.codingpirates.minecraft.mods.CodingPiratesMod;
+import dk.codingpirates.minecraft.mods.block.HBlock;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+
+
+
+public class ModCrafting {
+
+	public static void register() {
+		GameRegistry.addShapedRecipe(new ItemStack(CodingPiratesMod.HBlock), "GGG", "GGG", "GGG",'G',Blocks.GOLD_BLOCK);
+		
+		
+	}
+}
+//husk og register i codingpirateMod/main java set in ModCrafting.register();
